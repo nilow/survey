@@ -1,0 +1,39 @@
+.login-container {
+    height: 100vh;
+    .row {
+        height: 100%;
+    }
+    .login-img {
+        height: 40vh;
+        background: url('https://picsum.photos/id/411/1920/1080') center center no-repeat;
+        background-size: cover;
+        @media screen and (min-width: 768px) {
+            height: 100%;
+        }
+    }
+    .login-form {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            height: 100%;
+        }
+        img {
+            margin: 2rem 0;
+        }
+        .btn-primary {
+            background: $logo_color1;
+            border-color: $logo_color1;
+            margin-bottom: 0.5rem;
+        }
+        .errorinfo {
+            text-align: center;
+            display: block;
+            padding: 1rem;
+            background: lighten($logo_color2,20%);
+            margin: 0 0 1rem 0;
+        }
+    }
+}

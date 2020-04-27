@@ -1,0 +1,53 @@
+.main-title {
+	font-family: $font-family-main-title;
+	padding: 1rem 0;
+	font-size: 1.5rem;
+	@media screen and (min-width: 768px) {
+		font-size: 3rem;
+	}
+}
+
+h2 {
+    color: $logo_color1;
+	font-size: 1.5rem;
+	font-weight: 300;
+	@media screen and (min-width: 768px) {
+		font-size: 2.5rem;
+	}
+}
+
+.navbar-dark__vuelar {
+	background: $bg_navigation !important;
+}
+
+section {
+	padding: 2rem 0;
+	position: relative;
+	@media screen and (min-width: 768px) {
+		padding: 4rem 0;
+	}
+	&:after {
+		content:'';
+		width: 30%;
+		height: 1px;
+		display: block;
+		background: lighten($bg_footer, 35%);
+		position: absolute;
+		bottom: -0.5px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 3;
+	}
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}

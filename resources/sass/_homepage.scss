@@ -1,0 +1,53 @@
+.bestsellers {
+	background: lighten($bg_bestsellers, 38%);
+}
+.newproducts {
+	background: lighten($bg_bestsellers, 36%);
+}
+.news {
+    background: lighten($bg_bestsellers, 40%);
+	.news-imgwrapper {
+		position: relative;
+		height: 35vh;
+		overflow: hidden;
+		@media screen and (min-width: 1600px) {
+			height: 25vh;
+		}
+		&__img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: width 0.8s ease;
+			width: 100%;
+			&:hover {
+				width: 105%;
+			}
+		}
+		&__title {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			background: rgba(0,0,0,0.8);
+			color: $white;
+			padding: 1.5rem 1rem 1rem 1rem;
+			h3{
+				font-weight: 300;
+				margin: 0;
+				font-size: 1.5rem;
+			}
+		}
+		&__date{
+			position: absolute;
+			top: 0px;
+			left:50%;
+			transform: translate(-50%,-50%);
+			background: $bg_addtobasket;
+			display: block;
+			padding: 0.2rem 0.3rem;
+			color: $white;
+			width: auto;
+			z-index: 5;
+		}
+	}
+}

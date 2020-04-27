@@ -1,0 +1,9 @@
+.offercart {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .offercart-container {
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,32 @@
+.user-info {
+	position: relative;
+	&__preview {
+		position:absolute;
+		top: 120%;
+        width: 11rem;
+        text-align: center;
+		right: 0;
+		z-index: 5;
+		background: #fff;
+		padding: 1rem;
+		border-radius: $radius;
+		border: 1px solid $lightgrey;
+		&:before {
+			content:'';
+			position: absolute;
+			background: $white;
+			display: block;
+			width: 15px;
+			height: 15px;
+			top: -8px;
+			right: 25px;
+			transform: rotate(45deg);
+			border-left: 1px solid $lightgrey;
+			border-top: 1px solid $lightgrey;
+		}
+    }
+    .user-icon {
+		width: 35px;
+		margin: 0 1rem;
+	}
+}
